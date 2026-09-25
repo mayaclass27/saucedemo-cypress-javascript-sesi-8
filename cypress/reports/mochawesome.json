@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-09-23T14:13:58.960Z",
+    "end": "2026-09-23T14:14:13.203Z",
+    "duration": 14243,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0bb9f43b-6977-469f-a334-31a8d39833da",
+      "title": "",
+      "fullFile": "cypress\\e2e\\regressionTest\\saucedemo-login-test.cy.js",
+      "file": "cypress\\e2e\\regressionTest\\saucedemo-login-test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ecd5d0b9-8a5b-4f5d-8acf-b66c12c49736",
+          "title": "saucedemo login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login with valid user",
+              "fullTitle": "saucedemo login Login with valid user",
+              "timedOut": null,
+              "duration": 2954,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Login with data \n_loginPages.default.login(users.validUser.username, users.validUser.password);\n// Verify Login Success\n_loginPages.default.verifyLoginSuccess(\"/inventory.html\", \"Products\");",
+              "err": {},
+              "uuid": "9023b1c7-8a6c-4901-bb4d-e2788fc005ab",
+              "parentUUID": "ecd5d0b9-8a5b-4f5d-8acf-b66c12c49736",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login with invalid user",
+              "fullTitle": "saucedemo login Login with invalid user",
+              "timedOut": null,
+              "duration": 1592,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Login with data \n_loginPages.default.login(users.invalidUser.username, users.invalidUser.password);\n// Verify Login Error\n_loginPages.default.verifyLoginError(users.invalidUser.errorMsg);",
+              "err": {},
+              "uuid": "ec19d09e-fd8a-4a04-93a7-b33eb11560ab",
+              "parentUUID": "ecd5d0b9-8a5b-4f5d-8acf-b66c12c49736",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login with locked out user",
+              "fullTitle": "saucedemo login Login with locked out user",
+              "timedOut": null,
+              "duration": 1290,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Login with data \n_loginPages.default.login(users.lockedOutUser.username, users.lockedOutUser.password);\n// Verify Login Failed\n_loginPages.default.verifyLoginError(users.invalidUser.errorMsg);",
+              "err": {},
+              "uuid": "c0550359-d9dc-4113-8325-861d404d16b5",
+              "parentUUID": "ecd5d0b9-8a5b-4f5d-8acf-b66c12c49736",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9023b1c7-8a6c-4901-bb4d-e2788fc005ab",
+            "ec19d09e-fd8a-4a04-93a7-b33eb11560ab",
+            "c0550359-d9dc-4113-8325-861d404d16b5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5836,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "8.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": true,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

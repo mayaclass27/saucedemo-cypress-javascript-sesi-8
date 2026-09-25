@@ -1,0 +1,16 @@
+{
+    "validUser": {
+        "username": "standard_user",
+        "password" : "secret_sauce"
+    },
+    "invalidUser": {
+        "username": "invalid",
+        "password": "wrongpassword",
+        "errorMsg": "Username and password do not match any user in this service"
+    },
+    "lockedOutUser": {
+        "username": "lock",
+        "password": "wrongpassword",
+        "errorMsg": "Sorry, this user has been locked out."     
+    }
+}
